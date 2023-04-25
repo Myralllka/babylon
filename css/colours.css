@@ -1,0 +1,27 @@
+:root{
+    /*Colours described here: https://www.nordtheme.com/docs/colors-and-palettes*/
+
+    /*dark*/
+    --grey0: #2E3440;
+    --grey1: #3B4252;
+    --grey2: #434C5E;
+    --grey3: #4C566A;
+
+    /*light*/
+    --snow0: #D8DEE9;
+    --snow1: #E5E9F0;
+    --snow2: #ECEFF4;
+
+    /*frost colours*/
+    --frost_green: #8FBCBB;
+    --frost_blue0: #88C0D0;
+    --frost_blue1: #81A1C1;
+    --frost_blue2: #5E81AC;
+
+    /*aurora colors*/
+    --red: #BF616A;
+    --orange: #D08770;
+    --yellow: #EBCB8B;
+    --lightgreen: #A3BE8C;
+    --pink: #B48EAD;
+}
