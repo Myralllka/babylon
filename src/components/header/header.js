@@ -1,16 +1,15 @@
-import React from 'react'
+import React from "react";
+import "./Header.scss";
+import MenuAccount from "../MenuAccount/MenuAccount";
 
-import './header.css'
-import MenuAccount from "./account";
+const Header = () => {
+  return (
+    <header className="header__nav">
+      <div className="header__container">
+        <MenuAccount></MenuAccount>
+      </div>
+    </header>
+  );
+};
 
-export default class Header extends React.Component {
-    render() {
-        return (
-            <header className="app_header">
-                <div className="right">
-                    <MenuAccount height={40} width={40}></MenuAccount>
-                </div>
-            </header>
-        )
-    }
-}
+export default Header;
