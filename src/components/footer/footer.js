@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div class="footer__link">          
           <Link to="Transaction" class="_icon-Trancaction"></Link>
-          <div className="footer__link-title">Trancaction</div>
+          <div className="footer__link-title">Transaction</div>
         </div>
         <div class="footer__link">
           <Link to="Debts" class="icon-DebtUS"></Link>
