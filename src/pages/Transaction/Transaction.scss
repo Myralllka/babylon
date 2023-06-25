@@ -1,0 +1,10 @@
+@import '../../style/style.scss';
+
+h1 {
+    color: aliceblue;
+}
+.container {
+    width: $container-width;
+    margin: 60px auto;
+
+}

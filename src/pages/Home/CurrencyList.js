@@ -1,0 +1,22 @@
+export const CurrencyList = [
+  { value: "", label: "Currency" },
+  { value: "USD", label: "$" },
+  { value: "EUR", label: "€" },
+  { value: "CZK", label: "Kč" },
+  { value: "PLN", label: "zł" },
+  { value: "UAH", label: "₴" },
+  { value: "GBP", label: "£" },
+  { value: "CNY", label: "¥" },
+  { value: "BTC", label: "฿" },
+  { value: "INR", label: "₹" },
+  { value: "EGP", label: "ج.م" },
+  /* { value: "IDR", label: "Rp" },
+  { value: "AWG", label: "ƒ" },
+  { value: "IDR", label: "Rp" },
+  { value: "IRR", label: "﷼" },
+  { value: "JPY", label: "¥" },
+  { value: "QAR", label: "ق.ر" },
+  { value: "RUB", label: "₽" },
+  { value: "TRY", label: "₺" },
+  { value: "AED", label: "إ.د" },*/
+];

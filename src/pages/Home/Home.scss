@@ -1,0 +1,306 @@
+@import "../../style/style.scss";
+@import "../../style/colours.scss";
+
+
+.home {
+  position: inherit;
+  margin: 50px auto;
+  padding: 5px 5px;
+  max-width: $container-width;
+ // height: 100vh;
+// max-height: 400px;
+// overflow: scroll;
+  }
+  
+   .home__title {
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0.08rem;
+  color: $green;
+  font-family: "Gruppo", sans-serif;
+  }
+  
+  .home__card {
+    max-height: 400px;
+    overflow: scroll;
+    margin-bottom: 10px;
+  }
+
+  .home__card-items {
+    &{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  gap: 4px;
+  position: relative;
+  
+  
+  &__time {
+    width: 92px;
+    color: $green;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    align-items: center;
+      }
+  
+  &__image {
+    width: 92px;
+    position: inherit;
+    max-width: 35px;
+    max-height: 35px;
+    //padding: 2px;
+  
+    & img {
+      position: inherit;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 3px;
+    }
+  }
+  
+  &__descrip {
+    width: 100px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #62d1cf;
+    padding: 5px;
+    font-family: "Kumbh Sans", sans-serif;
+     //font-family: "Quicksand", sans-serif;
+  //font-family: 'Gruppo', sans-serif;
+    //font-family: 'Poppins', sans-serif;
+  //font-family: 'Sofia Sans', sans-serif;
+  //font-family: 'Dongle', sans-serif;
+  //font-family: 'Fredoka', sans-serif;
+  //font-family: 'Gantari', sans-serif;
+   //font-family: 'Mallanna', sans-serif;
+  }
+  
+  &__counter {
+    width: 92px;
+    padding: 5px;
+    color: $green;
+    //background-color: $greyDropdown;
+    background-image: linear-gradient(  rgb(37, 42, 52), rgba(72, 80, 99, 0.875), rgb(37, 42, 52),
+    );
+    border-radius: 8px;
+  }
+  &__currency {
+    width: 44px;
+    font-family: 'Mallanna', sans-serif;
+    font-size: 18px;
+    color: $green;
+    text-align: center;
+  }
+    }}
+
+.card__btn {
+  &
+ {
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  min-width: 30px;
+  min-height: 30px;
+  border: 0px;
+  margin: 0px;
+}
+
+&__delete-image {
+  position: absolute;
+  max-width: 30px;
+  max-height: 30px;
+  padding: 7px 7px;
+}
+
+&__edit-image {
+  position: absolute;
+  display: contents;
+  max-width: 30px;
+  max-height: 30px;
+  padding: 2px 7px;
+  object-fit: contain;
+}
+}
+
+
+.home__total-amount {
+  &{
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+&__title {
+  display: flex;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+   letter-spacing: 0.08rem;
+  color: $green;
+  font-family: "Gruppo", sans-serif;
+  font-weight: 700;
+}
+&__result {
+  padding: 5px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  background-color: $greyDropdown;
+  border: 1px solid $green;
+  border-radius: 8px;
+  color: #08f0e0fe;
+  font-weight: 500;
+  letter-spacing: 0.08rem;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+
+  // font-family: 'Gruppo', sans-serif;
+
+  //font-family: 'Poppins', sans-serif;
+  //font-family: 'Sofia Sans', sans-serif;//kyrylic
+  //font-family: 'Dongle', sans-serif;
+  //font-family: 'Fredoka', sans-serif;
+  //font-family: 'Gantari', sans-serif;
+  //font-family: 'Kumbh Sans', sans-serif;
+  //font-family: 'Mallanna', sans-serif;
+}
+}
+
+.home__form {
+  &{
+   position: relative;
+  display:flexbox;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 100px;
+  margin: 0px;
+  gap: 10px;
+ 
+}
+
+&__title{
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.01rem;
+  color: $green;
+  font-family: "Gruppo", sans-serif;
+  margin-bottom: 10px;
+}
+
+&__items {
+  position: relative;
+  display:flex;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+ gap: 5px;
+
+
+
+/*&__time {
+  position: inherit;
+  display: flexbox;
+  width: 44px;
+  color: $green;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  margin: 0px 2px 0px 2px;
+}*/
+
+&__category {
+  position: inherit;
+  display: flexblock;
+  }
+
+&__discription {
+  position: inherit;
+  display: block;
+  max-width: 100px;
+ 
+}
+
+&__discription input {
+  padding: 0px 3px 3px 1px;
+  margin: 0 3px 3px 1px;
+  font-size: 12px;
+  color: $green;
+  font-family: "Poppins", sans-serif;
+  }
+
+&__discription label {
+  font-size: 12px;
+  letter-spacing: 0.02rem;
+  color: $greydark;
+  font-family: "Poppins", sans-serif;
+ }
+
+ &__counter {
+  max-width: 92px;
+  position: inherit;
+  display: flexbox;
+}
+
+&__counter input {
+  padding: 0 3px 3px 1px;
+  margin: 0 3px 3px 1px;
+  font-size: 12px;
+  color: $green;
+  font-family: "Poppins", sans-serif;
+}
+
+&__counter label {
+  color: $greydark;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+   //font-family: "Quicksand", sans-serif;
+  //font-family: 'Gruppo', sans-serif;
+  //font-family: 'Sofia Sans', sans-serif;//kyrylic
+  //font-family: 'Dongle', sans-serif;
+  //font-family: 'Fredoka', sans-serif;
+  //font-family: 'Gantari', sans-serif;
+  //font-family: 'Kumbh Sans', sans-serif;
+  //font-family: 'Mallanna', sans-serif;
+}
+
+&__currency {
+position: inherit;
+ display: flexbox;
+ }
+}
+}
+
+#currency {
+ display: flex;
+  font-size: 16px;
+  color: $green;
+  justify-content: center;
+ align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.form__btn {
+  position: inherit;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn__form-main {
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.form__btn__image {
+  max-width: 50px;
+  max-height: 50px;
+  padding: 13px 13px;
+  position: absolute;
+}
+
+

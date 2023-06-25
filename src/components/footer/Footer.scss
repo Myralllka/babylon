@@ -1,0 +1,91 @@
+@import "../../style/colours.scss";
+@import "../../style/style.scss";
+.footer {
+  &__menu {
+    position: fixed;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(46, 52, 64) 60%,
+      #1b1e25 100%
+    );
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 2000;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: $container-width;
+    margin: 0 auto 10px auto;
+    padding: 2px 3px 5px 3px;
+  }
+
+  &__link {
+    width: 100%;
+    display: flex;
+    position: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //border: $lightgreen 1px solid;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0 1px 0 1px;
+    z-index: 10;
+    background: linear-gradient(
+      90deg,
+      rgb(37, 42, 52),
+      rgba(72, 80, 99, 0.875),
+      rgb(37, 42, 52)
+    );
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5) inset,
+      0 0px 5px rgba(0, 0, 0, 0.5) inset, 0 1px 1px #2a303b;
+  }
+
+  &__link-title {
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    color: $green;
+    text-align: center;
+    margin-bottom: 1px;
+    padding: 0 4px;
+  }
+}
+
+._icon-Home,
+._icon-Trancaction,
+.icon-DebtUS,
+._icon-Savings,
+._icon-Settings {
+  display: inline-flex;
+  font-size: 2rem;
+  color: $green;
+  text-align: center;
+  //justify-items: center;
+  padding: 0;
+  // margin: 0;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  width: 30px;
+  height: 40px;
+  margin-top: 2px;
+  //object-fit:contain;
+}
+
+._icon-Home:hover,
+._icon-Trancaction:hover,
+.icon-DebtUS:hover,
+._icon-Savings:hover,
+._icon-Settings:hover {
+  color: #178685ef;
+  transition: all 0.2s ease;
+  /*
+  filter: drop-shadow(0px 0px 4px var(--snow0));
+  transition: all 0.2s ease;*/
+}
