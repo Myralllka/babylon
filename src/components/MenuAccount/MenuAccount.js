@@ -4,9 +4,10 @@ import "./../Iconfont/Iconsfont.scss";
 import { Link } from "react-router-dom";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { ReactComponent as CustomIcon } from "../../imgs/Google_icon.svg";
+import Divider from "@mui/material/Divider";
+import Authoriz from "../Authoriz/Authoriz";
 
-const MenuAccount = () => {
+const MenuAccount = ({ handleCallbackResponse, handleLogOut }) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -42,26 +43,26 @@ const MenuAccount = () => {
               horizontal: "left",
             }}
           >
-            <MenuItem onClick={handleClose}>Profile</MenuItem>
             <MenuItem
-              component={Link}
-              to="Debts"
-              onClick={handleClose}
-              className="Google-btn"
-              style={{
-                background: "#e0e4ebd2",
-                transition: "background-color 0.3s",
-                color: "blue",
-                paddingLeft: "5px",
-                paddinRight: "5px",
+              className="MenuItem_header"
+              sx={{
+                padding: "0",
+                fontFamily: "Poppins, sans-serif",
+                fontSize: "16",
+                margin: "0",
+                justifyContent: "center",
               }}
+              component={Link}
+              to="Profile"
+              onClick={handleClose}
             >
-              <CustomIcon
-                style={{ width: "24px", height: "24px", marginRight: "2px" }}
-              />
-              Sing in
+              Profile
             </MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
+            <Divider sx={{ my: 0.5 }} />
+            <Authoriz
+              onClick={handleCallbackResponse}
+              id="signInDiv"
+            ></Authoriz>
           </Menu>
         </div>
       </div>

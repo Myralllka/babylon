@@ -1,5 +1,4 @@
 export const CurrencyList = [
-  { value: "", label: "Currency" },
   { value: "USD", label: "$" },
   { value: "EUR", label: "€" },
   { value: "CZK", label: "Kč" },

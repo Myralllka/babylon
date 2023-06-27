@@ -8,25 +8,25 @@ const Footer = () => {
   return (
     <footer className="footer__menu">
       <div className="footer__container">
-      <div class="footer__link link__active">
+      <div className="footer__link link__active">
           <Link to='/'class="_icon-Home"></Link>
           <div className="footer__link-title">
             Home</div>
         </div>
-        <div class="footer__link">          
-          <Link to="Transaction" class="_icon-Trancaction"></Link>
-          <div className="footer__link-title">Trancaction</div>
+        <div className="footer__link">          
+          <Link to="Transaction" class="_icon-Transaction"></Link>
+          <div className="footer__link-title">Transaction</div>
         </div>
-        <div class="footer__link">
+        <div className="footer__link">
           <Link to="Debts" class="icon-DebtUS"></Link>
           <div className="footer__link-title">
             Debts</div>
         </div>
-        <div class="footer__link">
+        <div className="footer__link">
            <Link to="Savings" class="_icon-Savings"></Link>
            <div className="footer__link-title">Savings</div>
         </div>
-        <div class="footer__link">
+        <div className="footer__link">
           <Link to="Settings" class="_icon-Settings"></Link>
           <div className="footer__link-title">Settings</div>
         </div>

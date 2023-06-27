@@ -6,7 +6,7 @@ const Savings = () => {
         <>
             <div className="container">
                 <h1>Savings</h1>
-            </div>
+                   </div>
 
         </>
     );

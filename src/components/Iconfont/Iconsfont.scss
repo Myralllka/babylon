@@ -13,7 +13,7 @@
 [class^="_icon-"]:before, [class*=" _icon-"]:before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'finance' !important;
-  speak: never;
+  //speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -66,6 +66,12 @@
 ._icon-Settings:before {
   content: "\e909";
 }
+._icon-Transaction:before {
+  content: "\e90a";
+}
+/*
 ._icon-Trancaction:before {
   content: "\e90a";
 }
+
+*/

@@ -11,7 +11,6 @@ import {
   CardContent,
   InputLabel,
 } from "@mui/material";
-
 import { iconOptions } from "./HomeIcons";
 import "./Home.scss";
 import Edit_green from "./icons/Edit_green.svg";
@@ -19,6 +18,29 @@ import Delete_red from "./icons/Delete_red.svg";
 import Add_green from "./icons/Add_green.svg";
 import Reset_green from "./icons/Reset_green.svg";
 import { CurrencyList } from "./CurrencyList";
+
+
+const ITEM_HEIGHT = 30;
+const ITEM_PADDING_TOP = 2;
+
+const MenuProps = {
+  PaperProps: {
+    style: {
+      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+      maxWidth: 140,
+    },
+  },
+};
+
+const MenuPropsCurrency = {
+  PaperProps: {
+    style: {
+      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+      maxWidth: 100,
+    },
+  },
+};
+
 
 const HomeMainExpencesItems = () => {
   const [currentTime, setCurrentTime] = useState("");
@@ -240,18 +262,19 @@ const HomeMainExpencesItems = () => {
                 Category
               </InputLabel>
               <Select
-                sx={{ px: 0, mb:0.5, pb: 0,  fontSize: 10, color: "#0beeeaef", mr: 0,
+                sx={{ px: 0, mb:0.5, pb: 0, mr: 0, fontSize: 10, color: "#0beeeaef", 
                 }}
                 label="Category"
                 id="Category"
                 value={selectedOption}
                 onChange={handleOptionChange}
-              >
-                <MenuItem value="" >
+                MenuProps={MenuProps}
+                >
+                  <MenuItem value="" >
                   <em>-Category-</em>
                 </MenuItem>
                 {iconOptions.map((option, index) => (
-                  <MenuItem key={index} value={option.value} >
+                  <MenuItem key={index} value={option.value}>
                     <ListItemIcon>
                       <img
                         src={option.value}
@@ -262,6 +285,7 @@ const HomeMainExpencesItems = () => {
                     <ListItemText primary={option.label} />
                   </MenuItem>
                 ))}
+              
               </Select>
             </FormControl>{" "}
           </div>
@@ -304,6 +328,7 @@ const HomeMainExpencesItems = () => {
                 Currency
               </InputLabel>
               <Select
+               MenuProps={MenuPropsCurrency}
                 label="currency"
                 id="currency"
                 sx={{

@@ -5,7 +5,8 @@ const Debts = () => {
     <>
       <div className="container">
         <h1>Debts</h1>
-      </div>
+
+        </div>
     </>
   );
 };

@@ -8,9 +8,18 @@
 }
 
 ._icon-Account:hover {
-  filter: drop-shadow(0px 0px 4px var(--snow0));
-  transition: all 0.2s ease;
+  /*filter: drop-shadow(0px 0px 4px var(--snow0));
+  transition: all 0.2s ease;.Google_sign-out:focus*/
+
+    color: #178685ef;
+    transition: all 0.2s ease;
+    
 }
+
+._icon-Account:focus {
+transition: all 0.3s ease-in-out;
+}
+
 
 .account_button {
   position: inherit;
@@ -21,23 +30,15 @@
   padding-bottom: 10px;
 }
 
-/*.Google-btn {
-  background: #e0e4ebd2;  
-  transition: 'background-color 0.3s';
-  color: blue;
-  padding-left: 5px;
-  padding-right: 5px;
-  transition: 'background-color 0.3s'
-
-}*/
-
-.MuiTouchRipple-root:hover {
-  background-color: white;
-  transition: background-color 0.3s;
-}
-
 .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
   background-color: $greyDropdown !important;
   //backdrop-filter: blur(100px) !important;
   color: $green !important;
 }
+.MenuItem_header{
+letter-spacing: 0.8rem;
+}
+.MenuItem_header:hover{
+  background-color: bisque;
+}
+ 
